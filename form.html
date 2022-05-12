@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="acets/css/style.css">
+     <link rel="stylesheet" href="acets/css/form.css">
+     <title>formulario</title>    
+</head>
+<body>
+     <header>         
+          <img class="logo" src="acets/img/logo-colorido@2x.png" alt="logo">         
+     </header>
+     <div class="menu">
+          <a href="index.html">Listagem</a>
+          <a href="form.html">Cadastrar</a>
+     </div>
+     <section>
+          <form class="formulario" onsubmit="testaformulario(event);">
+               <div class="div_bloco">
+                    <label class="label_grande" for="nome">Nome</label>
+                    <input id="nome" onkeypress="testaCampoTelefone(event)" onfocus="this.Value = '' " type="name" required>
+               </div>
+               <div class="div_bloco">
+                    <label class="label_grande" for="nome">Telefone</label>
+                    <input id="phone" type="phone" required>
+               </div>
+               <div class="div_bloco_2">
+                    <label id="ep">Experiencia previa</label> 
+                    <input type="radio" name="xp" id="xp-yes" value="tru"/>
+                    <div class="div_sn">
+                         <lAbel>
+                              Sim
+                         </lAbel>
+                         <br>
+                         <input type="radio" name="xp" id="xp-now" value="false"/>
+                         <lAbel>
+                              Não
+                         </lAbel>
+                    </div>
+               </div>     
+                    <input  type="submit" value="salvar">     
+          </form>                  
+           
+     </section>
+     <script src="acets/js/form.js"></script>
+</body>
+</html>
